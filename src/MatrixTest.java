@@ -17,10 +17,10 @@ public class MatrixTest {
         System.out.println("Submatrix (1, 1, 2, 2):");
         matrix.printSubmatrix(1, 1, 2, 2);
 
-        // Меняем местами строки с минимальным и максимальным элементами в столбце 1
+        // Меняем местами строки с минимальным и максимальным элементами в столбце k
         int[][] data = {
+                {0, 5, 6},
                 {1, 2, 3},
-                {4, 5, 6},
                 {7, 8, 9}
         };
         System.out.println("Original Matrix:");
@@ -30,6 +30,6 @@ public class MatrixTest {
             }
             System.out.println();
         }
-        Matrix.swapRowsWithMinMax(data, 1);
+        Matrix.swapRowsWithMinMax(data, 0);
     }
 }
